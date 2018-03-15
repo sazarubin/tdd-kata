@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDKata", "TDDKata\TDDKata.csproj", "{CEE3EDEA-B8BA-4891-80AE-3B77B434FDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{FFCC496F-540A-4DAA-9CB7-9BE2E719FFB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE3EDEA-B8BA-4891-80AE-3B77B434FDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE3EDEA-B8BA-4891-80AE-3B77B434FDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE3EDEA-B8BA-4891-80AE-3B77B434FDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE3EDEA-B8BA-4891-80AE-3B77B434FDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCC496F-540A-4DAA-9CB7-9BE2E719FFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCC496F-540A-4DAA-9CB7-9BE2E719FFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCC496F-540A-4DAA-9CB7-9BE2E719FFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCC496F-540A-4DAA-9CB7-9BE2E719FFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
