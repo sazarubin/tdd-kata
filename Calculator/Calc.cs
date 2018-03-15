@@ -1,5 +1,3 @@
-using System;
-
 namespace Calculator
 {
     public class Calc
@@ -8,8 +6,14 @@ namespace Calculator
         {
             if (string.IsNullOrWhiteSpace(numbers))
                 return 0;
+
+            var commaIndex = numbers.IndexOf(",");
+            if (commaIndex > -1)
+                return int.Parse(numbers.Substring(commaIndex + 1)) + int.Parse(numbers.Substring(0, commaIndex));
             
-            return Int32.Parse(numbers);
+            //TODO: может Split? Но тогда лишний функционал появляется
+            
+            return int.Parse(numbers);
         }
     }
 }
