@@ -32,5 +32,12 @@ namespace TDDKata
             var calc = new Calc();
             Assert.Equal(36, calc.Add("11,25"));
         }
+
+        [Fact]
+        public void AddForUnknownAmountOfNumbers_ReturnsTheirSum()
+        {
+            var calc = new Calc(); 
+            Assert.Equal(6, calc.Add("1,2,3"));
+        }
     }
 }
