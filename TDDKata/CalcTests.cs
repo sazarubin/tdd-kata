@@ -54,5 +54,12 @@ namespace TDDKata
             var calc = new Calc();
             Assert.ThrowsAny<Exception>(() => calc.Add("1,2,\n3"));
         }
+
+        [Fact]
+        public void SupportsChangingDelimiters()
+        {
+            var calc = new Calc();
+            Assert.Equal(6, calc.Add("//;\n1;2;3"));
+        }
     }
 }
