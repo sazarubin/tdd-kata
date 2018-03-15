@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 
 namespace Calculator
@@ -7,7 +6,10 @@ namespace Calculator
     {
         public int Add(string numbers)
         {
-            return numbers.Split(',', StringSplitOptions.RemoveEmptyEntries).Sum(int.Parse);
+            if (string.IsNullOrEmpty(numbers))
+                return 0;
+            
+            return numbers.Split(',', '\n').Sum(int.Parse);
         }
     }
 }

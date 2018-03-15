@@ -1,3 +1,4 @@
+using System;
 using Calculator;
 using Xunit;
 
@@ -38,6 +39,20 @@ namespace TDDKata
         {
             var calc = new Calc(); 
             Assert.Equal(6, calc.Add("1,2,3"));
+        }
+
+        [Fact]
+        public void AddWithLineBreak_ReturnsSum()
+        {
+            var calc = new Calc();
+            Assert.Equal(6, calc.Add("1,2\n3"));
+        }
+        
+        [Fact]
+        public void AddWithLineBreakAndComma_Throws()
+        {
+            var calc = new Calc();
+            Assert.ThrowsAny<Exception>(() => calc.Add("1,2,\n3"));
         }
     }
 }
