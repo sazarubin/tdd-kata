@@ -1,1 +1,3 @@
-files: []
+files:
+  - source: nothing.json
+    translation: /localized/%original_file_name%.%locale%.json
